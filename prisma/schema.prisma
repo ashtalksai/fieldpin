@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id        String    @id @default(cuid())
+  email     String    @unique
+  name      String?
+  password  String?
+  image     String?
+  role      String    @default("ranger")
+  agencyId  String?
+  agency    Agency?   @relation(fields: [agencyId], references: [id])
+  pins      Pin[]
+  accounts  Account[]
+  sessions  Session[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Agency {
+  id        String   @id @default(cuid())
+  name      String
+  users     User[]
+  pins      Pin[]
+  createdAt DateTime @default(now())
+}
+
+model Pin {
+  id        String    @id @default(cuid())
+  type      String
+  latitude  Float
+  longitude Float
+  data      Json
+  photos    String[]
+  userId    String
+  user      User      @relation(fields: [userId], references: [id])
+  agencyId  String?
+  agency    Agency?   @relation(fields: [agencyId], references: [id])
+  syncedAt  DateTime?
+  createdAt DateTime  @default(now())
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
