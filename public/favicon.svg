@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background: warm parchment -->
+  <rect width="64" height="64" rx="12" fill="#F5F1E8"/>
+  <!-- "F" in Libre Baskerville Bold, forest green -->
+  <text
+    x="10"
+    y="52"
+    font-family="'Libre Baskerville', Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="52"
+    fill="#2D6A4F"
+  >F</text>
+</svg>

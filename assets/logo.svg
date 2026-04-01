@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Wordmark: Fieldpin in Libre Baskerville Bold, forest green -->
+  <text
+    x="0"
+    y="62"
+    font-family="'Libre Baskerville', Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="60"
+    fill="#2D6A4F"
+    letter-spacing="-1"
+  >Fieldpin</text>
+</svg>

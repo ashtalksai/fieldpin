@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Topographic line pattern -->
+    <pattern id="topo" x="0" y="0" width="60" height="60" patternTransform="rotate(-30)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="30" x2="60" y2="30" stroke="#52B788" stroke-width="1.5" opacity="0.12"/>
+    </pattern>
+    <!-- Left accent gradient -->
+    <linearGradient id="accentBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#52B788"/>
+      <stop offset="100%" stop-color="#2D6A4F"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background: near-black warm -->
+  <rect width="1200" height="630" fill="#1C1A14"/>
+
+  <!-- Topographic pattern -->
+  <rect width="1200" height="630" fill="url(#topo)"/>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="6" height="630" fill="url(#accentBar)"/>
+
+  <!-- Pin type dots row -->
+  <!-- Wildlife dot + label -->
+  <circle cx="100" cy="180" r="8" fill="#52B788"/>
+  <text x="116" y="186" font-family="Georgia, serif" font-size="15" fill="#8A7D65" letter-spacing="2" text-transform="uppercase">WILDLIFE</text>
+
+  <!-- Incident dot + label -->
+  <circle cx="248" cy="180" r="8" fill="#D4550A"/>
+  <text x="264" y="186" font-family="Georgia, serif" font-size="15" fill="#8A7D65" letter-spacing="2">INCIDENT</text>
+
+  <!-- Trail dot + label -->
+  <circle cx="400" cy="180" r="8" fill="#2D6080"/>
+  <text x="416" y="186" font-family="Georgia, serif" font-size="15" fill="#8A7D65" letter-spacing="2">TRAIL</text>
+
+  <!-- Wordmark: Field in white, pin in accent green -->
+  <text x="96" y="362" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="112" fill="#F5F1E8" letter-spacing="-3">Field</text>
+  <text x="392" y="362" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="112" fill="#52B788" letter-spacing="-3">pin</text>
+
+  <!-- Tagline -->
+  <text x="98" y="420" font-family="Georgia, serif" font-size="28" fill="#8A7D65" letter-spacing="0">Field data that doesn't wait for Wi-Fi.</text>
+
+  <!-- URL in muted style -->
+  <text x="98" y="480" font-family="'Courier New', monospace" font-size="17" fill="#4A4535" letter-spacing="2">fieldpin.ashketing.com</text>
+
+  <!-- Bottom-right: offline badge -->
+  <rect x="1000" y="548" width="160" height="42" rx="4" fill="rgba(45,106,79,0.2)" stroke="#52B788" stroke-width="1" stroke-opacity="0.3"/>
+  <text x="1080" y="575" font-family="Georgia, serif" font-size="14" fill="#52B788" text-anchor="middle" letter-spacing="3">OFFLINE-FIRST</text>
+</svg>

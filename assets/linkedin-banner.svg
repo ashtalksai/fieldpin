@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396">
+  <defs>
+    <pattern id="topo" x="0" y="0" width="80" height="80" patternTransform="rotate(-25)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="40" x2="80" y2="40" stroke="#52B788" stroke-width="1.5" opacity="0.18"/>
+    </pattern>
+    <linearGradient id="rightFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2D6A4F" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1B4332" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background: deep forest green -->
+  <rect width="1584" height="396" fill="#2D6A4F"/>
+
+  <!-- Topographic pattern -->
+  <rect width="1584" height="396" fill="url(#topo)"/>
+
+  <!-- Right-side gradient overlay -->
+  <rect width="1584" height="396" fill="url(#rightFade)"/>
+
+  <!-- Wordmark -->
+  <text x="100" y="215" font-family="Georgia, 'Times New Roman', serif" font-weight="bold" font-size="108" fill="#F5F1E8" letter-spacing="-2">Fieldpin</text>
+
+  <!-- Tagline -->
+  <text x="102" y="280" font-family="Georgia, serif" font-size="30" fill="rgba(245,241,232,0.7)" letter-spacing="0.5">Offline field reporting for park rangers.</text>
+
+  <!-- Pin type indicators - right side -->
+  <!-- Wildlife -->
+  <circle cx="1460" cy="148" r="10" fill="#52B788"/>
+  <text x="1440" y="154" font-family="Georgia, serif" font-size="16" fill="rgba(245,241,232,0.65)" text-anchor="end" letter-spacing="2">WILDLIFE</text>
+
+  <!-- Incident -->
+  <circle cx="1460" cy="198" r="10" fill="#D4550A"/>
+  <text x="1440" y="204" font-family="Georgia, serif" font-size="16" fill="rgba(245,241,232,0.65)" text-anchor="end" letter-spacing="2">INCIDENT</text>
+
+  <!-- Trail -->
+  <circle cx="1460" cy="248" r="10" fill="#2D6080"/>
+  <text x="1440" y="254" font-family="Georgia, serif" font-size="16" fill="rgba(245,241,232,0.65)" text-anchor="end" letter-spacing="2">TRAIL</text>
+</svg>
