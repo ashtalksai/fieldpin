@@ -1,0 +1,120 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8]
+  - alert [ref=e11]
+  - generic [ref=e12]:
+    - banner [ref=e13]:
+      - button [ref=e14]:
+        - img [ref=e15]
+      - link "Fieldpin" [ref=e16] [cursor=pointer]:
+        - /url: /dashboard
+      - generic [ref=e18]: DR
+    - main [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Demo Data
+        - generic [ref=e23]: This is demo data. Your rangers' real pins will appear here after their first sync.
+        - button "Set up my rangers →" [ref=e24]
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - img [ref=e28]
+            - generic [ref=e31]:
+              - img [ref=e32]
+              - text: +12%
+          - paragraph [ref=e35]: "127"
+          - paragraph [ref=e36]: Total Pins This Month
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - img [ref=e39]
+            - generic [ref=e44]:
+              - img [ref=e45]
+              - text: "+3"
+          - paragraph [ref=e48]: "8"
+          - paragraph [ref=e49]: Active Rangers Today
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - img [ref=e52]
+            - generic [ref=e57]:
+              - img [ref=e58]
+              - text: "-2"
+          - paragraph [ref=e61]: "4"
+          - paragraph [ref=e62]: Pending Syncs
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - img [ref=e65]
+            - generic [ref=e68]:
+              - img [ref=e69]
+              - text: "+5"
+          - paragraph [ref=e72]: "23"
+          - paragraph [ref=e73]: Reports Generated
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - generic [ref=e76]:
+            - heading "Pin Map" [level=3] [ref=e77]
+            - generic [ref=e78]:
+              - button "This week" [ref=e79]
+              - button "This month" [ref=e80]
+              - button "3 months" [ref=e81]
+          - generic [ref=e83]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic [ref=e91]:
+                - button "Zoom in" [ref=e92] [cursor=pointer]: +
+                - button "Zoom out" [ref=e93] [cursor=pointer]: −
+              - generic [ref=e94]:
+                - link "Leaflet" [ref=e95] [cursor=pointer]:
+                  - /url: https://leafletjs.com
+                  - img [ref=e96]
+                  - text: Leaflet
+                - text: "| © OpenStreetMap contributors"
+        - generic [ref=e100]:
+          - heading "Recent Activity" [level=3] [ref=e101]
+          - generic [ref=e102]:
+            - generic [ref=e103]:
+              - generic [ref=e104]: M
+              - generic [ref=e105]:
+                - paragraph [ref=e106]:
+                  - strong [ref=e107]: Ranger Martinez
+                  - text: dropped a wildlife pin
+                - generic [ref=e110]: 14:32
+            - generic [ref=e111]:
+              - generic [ref=e112]: O
+              - generic [ref=e113]:
+                - paragraph [ref=e114]:
+                  - strong [ref=e115]: Ranger Okonkwo
+                  - text: reported trail washout
+                - generic [ref=e118]: 13:15
+            - generic [ref=e119]:
+              - generic [ref=e120]: C
+              - generic [ref=e121]:
+                - paragraph [ref=e122]:
+                  - strong [ref=e123]: Ranger Chen
+                  - text: logged incident report
+                - generic [ref=e126]: 11:47
+            - generic [ref=e127]:
+              - generic [ref=e128]: M
+              - generic [ref=e129]:
+                - paragraph [ref=e130]:
+                  - strong [ref=e131]: Ranger Martinez
+                  - text: synced 6 pins
+                - generic [ref=e134]: 10:20
+            - generic [ref=e135]:
+              - generic [ref=e136]: K
+              - generic [ref=e137]:
+                - paragraph [ref=e138]:
+                  - strong [ref=e139]: Ranger Kim
+                  - text: dropped a wildlife pin
+                - generic [ref=e142]: 09:55
+            - generic [ref=e143]:
+              - generic [ref=e144]: O
+              - generic [ref=e145]:
+                - paragraph [ref=e146]:
+                  - strong [ref=e147]: Ranger Okonkwo
+                  - text: logged trail condition
+                - generic [ref=e150]: 08:30
+```
