@@ -9,7 +9,7 @@ WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@latest --activate
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npx prisma generate 2>/dev/null; pnpm run build
+RUN DATABASE_URL="postgresql://x:x@localhost:5432/x" npx prisma generate 2>/dev/null; pnpm run build
 
 FROM node:22-alpine
 RUN apk add --no-cache curl
